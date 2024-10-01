@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333; /* Dark background for navbar */
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar.scrolled {
+    background-color: #222; /* Slightly darker when scrolled */
+    color: white;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white; /* White text for navbar links */
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Change to your desired hover color */
+}
